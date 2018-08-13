@@ -6,6 +6,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Заглушка нашей базы данных.
+ */
 public final class MockDB {
 
     public static final List<Person> persons =

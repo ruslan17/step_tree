@@ -8,15 +8,15 @@ public class Person {
 
     private String name;
 
-    private LocalDate birthdate;
+    private LocalDate birthday;
 
     public Person() {
     }
 
-    public Person(int id, String name, LocalDate birthdate) {
+    public Person(int id, String name, LocalDate birthday) {
         this.id = id;
         this.name = name;
-        this.birthdate = birthdate;
+        this.birthday = birthday;
     }
 
     public int getId() {
@@ -35,12 +35,12 @@ public class Person {
         this.name = name;
     }
 
-    public LocalDate getBirthdate() {
-        return birthdate;
+    public LocalDate getBirthday() {
+        return birthday;
     }
 
-    public void setBirthdate(LocalDate birthdate) {
-        this.birthdate = birthdate;
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
     }
 
     @Override
@@ -48,7 +48,8 @@ public class Person {
         return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", birthdate=" + birthdate +
+                ", birthday=" + birthday +
                 '}';
     }
+
 }
